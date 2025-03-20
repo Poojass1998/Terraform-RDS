@@ -11,8 +11,8 @@ resource "aws_instance" "employee_backend" {
               sudo yum update -y
               sudo yum install -y nodejs npm mysql
               cd /home/ec2-user
-              git clone https://github.com/your-repo/employee-management.git
-              cd employee-management
+              git clone https://github.com/Poojass1998/Terraform-RDS.git
+              cd Terraform-RDS
               npm install
               nohup node server.js > app.log 2>&1 &
               EOF
