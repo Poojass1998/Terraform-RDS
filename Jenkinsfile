@@ -1,14 +1,7 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout Code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Poojass1998/Terraform-RDS.git'
-            }
-        }
-
-        stage('Terraform Init') {
+            stage('Terraform Init') {
             steps {
                 sh 'terraform init'
             }
