@@ -1,7 +1,7 @@
 resource "aws_instance" "employee_backend" {
   ami           = "ami-014e2b14bdb83e8ca"
   instance_type = "t2.micro"
-  key_name      = "aws.pem"
+  key_name      = "aws"
   subnet_id     = aws_subnet.public_subnet.id
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
   iam_instance_profile   = aws_iam_instance_profile.employee_instance_profile.name
