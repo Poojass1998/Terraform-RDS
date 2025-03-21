@@ -1,5 +1,5 @@
 resource "aws_instance" "employee_backend" {
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-014e2b14bdb83e8ca"
   instance_type = "t2.micro"
   key_name      = "aws.pem"
   subnet_id     = aws_subnet.public_subnet.id
